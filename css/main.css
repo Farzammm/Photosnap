@@ -1,0 +1,481 @@
+@font-face {
+  font-family: Gandom;
+  src: url(../assets/fonts/fonts/Gandom.ttf);
+}
+
+@font-face {
+  font-family: Far_khodkar;
+  src: url(../assets/fonts/fonts/Far_khodkar.ttf);
+}
+
+body {
+  direction: rtl;
+  font-family: Gandom;
+  text-align: right;
+}
+
+.buttun-box-light {
+  font-size: 0.875rem;
+}
+
+.buttun-box-light:hover a {
+  text-decoration: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.buttun-box-light:hover a.arrow {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.buttun-box-light a {
+  color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.buttun-box-dark {
+  font-size: 0.875rem;
+}
+
+.buttun-box-dark:hover a.arrow {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.buttun-box-dark:hover a {
+  text-decoration: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.buttun-box-dark a {
+  color: #000;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.text-subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.text-subtitle::after {
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 100%;
+  width: 83%;
+  height: 0.5px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.btn-shadow {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.7)), to(black));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), black);
+  color: #fff;
+  -webkit-box-shadow: 5px 5px 10px #000;
+          box-shadow: 5px 5px 10px #000;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-shadow:hover {
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
+  border: 1px solid black;
+}
+
+@media (max-width: 768px) {
+  .buttun-box-dark, .buttun-box-light {
+    font-size: 1.375rem;
+  }
+}
+
+.info {
+  margin-top: 50px;
+}
+
+.btn-form {
+  background-color: rgba(40, 167, 70, 0.7);
+  border: .5px solid #fff;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+}
+
+.btn-form:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#28a745), to(#208638));
+  background: linear-gradient(to right, #28a745, #208638);
+  -webkit-transform: scaleX(1.05);
+          transform: scaleX(1.05);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.navbar-brand span {
+  font-family: Far_khodkar;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav li:not(:last-child) {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav li a {
+    font-size: 1.375rem;
+  }
+  .navbar-nav li a:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .collapse a.btn-shadow {
+    font-size: 1.375rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-nav li a {
+    font-size: 1.125rem;
+    position: relative;
+  }
+  .navbar-nav li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #000074;
+    width: 100%;
+    height: 2px;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .navbar-nav li a:hover::before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+.navbar-brand span {
+  font-size: 3.125rem;
+}
+
+@media (min-width: 996px) {
+  .navbar-brand span {
+    font-size: 2.5rem;
+  }
+}
+
+.create {
+  background-color: black;
+}
+
+.create-img {
+  background: url(../assets/images/puppy-g4a573d210_1920.jpg) no-repeat center/cover;
+}
+
+.stories-img {
+  background: url(../assets/images/men-g2df9dba6c_1920.jpg) no-repeat center/cover;
+}
+
+.design-img {
+  background: url(../assets/images/camera-g0381e6c24_1920.jpg) no-repeat center/cover;
+}
+
+.mountains {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url(../assets/images/ama-dablam-gebc7eb786_1920.jpg) no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/images/ama-dablam-gebc7eb786_1920.jpg) no-repeat center/cover;
+  padding-top: 300px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.mountains:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.city {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url(../assets/images/city-g1c1139a0b_1920.jpg) no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/images/city-g1c1139a0b_1920.jpg) no-repeat center/cover;
+  padding-top: 300px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.city:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.voyage {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url(../assets/images/trip-g5f485c999_1920.jpg) no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/images/trip-g5f485c999_1920.jpg) no-repeat center/cover;
+  padding-top: 300px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.voyage:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.architacturals {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5))), url(../assets/images/london-g5c23decf1_1920.jpg) no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/images/london-g5c23decf1_1920.jpg) no-repeat center/cover;
+  padding-top: 300px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.architacturals:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.comments {
+  background-color: #ECF2F8;
+  margin-top: 80px;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 0.7rem;
+  background: white;
+  -webkit-box-shadow: 2px 5px 5px #19212e;
+          box-shadow: 2px 5px 5px #19212e;
+}
+
+.card-amin {
+  background: #7541c8 url("../assets/images/bg-pattern-quotation.svg") no-repeat 25% top;
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .card-amin {
+    background-position: 80% top;
+  }
+}
+
+.card-mahdi {
+  background-color: #48556a;
+  color: white;
+}
+
+.card-sahand {
+  background-color: #e2e213;
+}
+
+.card-ali {
+  background-color: #19212e;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .card-ali, .card-omid {
+    margin-top: -390px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card-ali, .card-omid {
+    margin-top: -470px;
+  }
+}
+
+@media (max-width: 992px) {
+  .card-ali, .card-omid {
+    margin-top: 0px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+.card-identity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin-bottom: 2rem;
+}
+
+.card-identity-img {
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+.card-identity-name {
+  font-size: 1rem;
+}
+
+.card-identity-qualification {
+  font-size: 0.9rem;
+  opacity: 50%;
+}
+
+.card-main-statement {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-paragraph {
+  opacity: 70%;
+}
+
+.form-contact {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7))), url(../assets/images/photography-basics.jpg) no-repeat center/cover;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../assets/images/photography-basics.jpg) no-repeat center/cover;
+  padding-bottom: 50px;
+}
+
+.form-contact h2 {
+  padding: 20px 0 30px;
+}
+
+.my-form-control {
+  background-color: transparent;
+  color: #fff;
+}
+
+.my-form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.my-form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.my-form-control::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.my-form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.my-form-control + h6 {
+  color: #ff0;
+}
+
+.my-form-control:focus {
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(255, 255, 0, 0.5);
+  color: #fff;
+}
+
+.mobile {
+  background: url(../assets/images/mobile.png) no-repeat center/cover;
+}
+
+@media (max-width: 992px) {
+  .mobile {
+    background: url(../assets/images/mobile.png) no-repeat center;
+  }
+}
+
+.text-mobile {
+  font-size: 2.5rem;
+  background: -webkit-gradient(linear, right top, left top, from(black), to(rgba(0, 0, 0, 0.4)));
+  background: linear-gradient(to left, black, rgba(0, 0, 0, 0.4));
+  color: #fff;
+  padding: 25px;
+  border-radius: 50px 0 0 50px;
+  margin-top: 40px;
+}
+
+@media (max-width: 992px) {
+  .text-mobile {
+    font-size: 1.375rem;
+    margin-top: 10px;
+  }
+}
+
+.footer {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 90px;
+  font-size: 0.875rem;
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+.footer-list a {
+  color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-list a:hover {
+  color: #fff;
+}
+
+@media (max-width: 996px) {
+  .footer {
+    display: block;
+    text-align: center;
+    font-size: 1.375rem;
+  }
+  .footer .navbar-brand {
+    margin-top: 0;
+  }
+  .footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer .buttun-box-light {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1.375rem;
+  }
+  .footer p {
+    font-size: 1.125rem;
+    padding: 0 100px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

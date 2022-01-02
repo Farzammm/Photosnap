@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Gandom;
+    src: url(../assets/fonts/fonts/Gandom.ttf);
+}
+
+@font-face {
+    font-family: Far_khodkar;
+    src: url(../assets/fonts/fonts/Far_khodkar.ttf);
+}
+
+body {
+    direction: rtl;
+    font-family: Gandom;
+    text-align: right;
+}
+
+.buttun-box-light {
+    font-size: $font-sm;
+    
+    &:hover a {
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+    &:hover a.arrow {
+        transform: rotate(360deg);
+    }
+    a {
+        color: #fff;
+        transition: all .5s;
+    }
+}
+
+.buttun-box-dark {
+    font-size: $font-sm;
+    
+    &:hover a.arrow {
+        transform: rotate(360deg);
+    }
+
+    &:hover a {
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+    a {
+        color: #000;
+        transition: all .5s;
+    }
+}
+
+.text-subtitle {
+    color: $text-subtitle;
+    padding-bottom: 20px;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 10%;
+        top: 100%;
+        width: 83%;
+        height: 0.5px;
+        background-color: $text-subtitle;
+    }
+}
+
+.btn-shadow {
+    background: linear-gradient(to left,rgba(0, 0, 0, 0.7),rgb(0, 0, 0));
+    color: #fff;
+    box-shadow: 5px 5px 10px #000;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover {
+        text-decoration: none;
+        box-shadow: none;
+        color: #fff;
+        border: 1px solid rgb(0, 0, 0,);
+    }
+}
+
+@media (max-width:768px) {
+    .buttun-box-dark,.buttun-box-light {
+        font-size: $font-xl;
+    }
+}
+
+.info {
+    margin-top: 50px;
+}
+
+.btn-form {
+    background-color: rgba(40, 167, 70, 0.7);
+    border: .5px solid #fff;
+    transform: scaleX(1);
+    transition: all .3s;
+    color: #fff;
+    &:hover {
+        background: linear-gradient(to right,rgb(40, 167, 69),rgb(32, 134, 56));
+        transform: scaleX(1.05);
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}

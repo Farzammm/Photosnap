@@ -1,0 +1,44 @@
+.footer {
+    background-color: $black;
+    display: flex;
+    p {
+        color: $text-subtitle;
+        margin-top: 90px;
+        font-size: $font-sm;
+    }
+}
+
+.footer-list {
+    list-style-type: none;
+    a {
+        color: $text-subtitle;
+        transition: all .3s;
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width:996px) {
+    .footer {
+        display: block;
+        text-align: center;
+        font-size: $font-xl;
+        .navbar-brand {
+            margin-top: 0;
+        }
+        ul {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        .buttun-box-light {
+            justify-content: center;
+            font-size: $font-xl;
+        }
+        p {
+            font-size: $font-md;
+            padding: 0 100px;
+        }
+    }
+}

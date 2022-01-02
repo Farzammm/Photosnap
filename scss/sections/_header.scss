@@ -1,0 +1,55 @@
+.navbar-brand span {
+    font-family: Far_khodkar;
+}
+
+@media (max-width:768px) {
+    .navbar-nav li:not(:last-child) {
+        border-bottom: .5px solid rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media (max-width:768px) {
+    .navbar-nav li a {
+        font-size: $font-xl;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .collapse a.btn-shadow {
+        font-size: $font-xl;
+    }
+}
+
+@media (min-width:768px) {
+    .navbar-nav li a {
+        font-size: $font-md;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 100%;
+            background-color: rgb(0, 0, 116);
+            width: 100%;
+            height: 2px;
+            transform: scaleX(0);
+            transition: all .5s;
+        }
+        &:hover::before {
+        transform: scaleX(1);
+        }
+    }
+}
+
+.navbar-brand span {
+    font-size: $font-xxxl;
+}
+
+@media (min-width:996px) {
+    .navbar-brand span {
+        font-size: $font-xxl;
+    }
+}
