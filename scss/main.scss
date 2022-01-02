@@ -1,12 +1,13 @@
-@import "./functions";
-@import "./variables";
-@import "./global";
-@import "./header";
-@import "./create";
-@import "./stories";
-@import "./design";
-@import "./read-story";
-@import "./comments";
-@import "./contact";
-@import "./mobile";
-@import "./footer";
+@import "./components/functions";
+@import "./components/variables";
+@import "./components/global";
+
+@import "./sections/header";
+@import "./sections/create";
+@import "./sections/stories";
+@import "./sections/design";
+@import "./sections/read-story";
+@import "./sections/comments";
+@import "./sections/contact";
+@import "./sections/mobile";
+@import "./sections/footer";

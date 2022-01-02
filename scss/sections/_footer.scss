@@ -19,6 +19,14 @@
     }
 }
 
+.footer-logo a {
+    color: #fff;
+    transition: all .3s;
+    &:hover {
+        color: #daa520;
+    }
+}
+
 @media (max-width:996px) {
     .footer {
         display: block;
@@ -26,10 +34,10 @@
         font-size: $font-xl;
         .navbar-brand {
             margin-top: 0;
+            margin-right: 0;
         }
         ul {
             display: flex;
-            justify-content: center;
             justify-content: space-around;
         }
         .buttun-box-light {
